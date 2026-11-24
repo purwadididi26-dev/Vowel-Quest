@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pronunciation Studio | Vowel Quest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><header id="site-header"></header>
+<main>
+
+<h1>Pronunciation Studio</h1>
+<p>How to use: 1) choose a vowel, 2) listen to the reference, 3) press Record and say the word, 4) press Stop, 5) listen and compare, 6) complete the checklist. Your recordings stay in this browser tab only. They are not uploaded and are not saved permanently. They disappear when you delete them or close the page.</p>
+<div class="card"><label for="v"><strong>Target vowel:</strong></label> <select id="v" style="font:inherit;padding:6px;border-radius:12px"></select>
+<div class="sym ipa" id="big"></div><p id="cmp"></p><div id="ref"></div></div>
+<div class="card y" style="margin-top:16px"><h2>Record yourself</h2>
+<p id="ind" hidden><span class="rec-dot"></span> <strong>Recording…</strong> <span id="time">0:00</span></p>
+<button class="btn" id="rb" type="button">⏺ Record</button><button class="btn alt" id="sb" type="button" disabled>⏹ Stop</button><button class="btn alt" id="pb" type="button" disabled>▶ Replay</button><button class="btn alt" id="db" type="button" disabled>🗑 Delete</button><button class="btn" id="cb" type="button" disabled>⇄ Compare with reference</button>
+<p id="empty">No recording yet. Press Record to start.</p><audio id="mine" controls hidden></audio><p id="st" class="status" role="status"></p>
+<p class="note">This studio does not assess your pronunciation automatically. Judge your recording yourself, or ask a teacher.</p></div>
+<div class="card m" style="margin-top:16px"><h2>Self-assessment</h2><p><label><input type="checkbox" id="c1"> Did I pronounce the target vowel clearly?</label></p><p><label><input type="checkbox" id="c2"> Could I distinguish it from a similar vowel?</label></p><p><label><input type="checkbox" id="c3"> Do I need more practice?</label></p><p id="fbk" role="status" class="fb"></p></div>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script><script src="js/main.js"></script><script src="js/studio.js"></script>
+</body></html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flashcards | Vowel Quest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head>
+<body><header id="site-header"></header>
+<main>
+
+<h1>Flashcards</h1>
+<p>How to use: pick a collection. Look at the symbol, say the sound, then tap the card to flip it. Use Previous and Next to move and Shuffle to mix the cards. Mark a card Mastered or Still learning. Review Again opens your Review collection: cards marked Still learning plus sounds you got wrong in quizzes. Your choices are saved in this browser.</p>
+<div class="tabs" role="group" aria-label="Collections"><button class="btn" data-n="Monophthongs" type="button">Monophthongs</button><button class="btn" data-n="Diphthongs" type="button">Diphthongs</button><button class="btn" data-n="Mixed Review" type="button">Mixed Review</button><button class="btn" data-n="Review" id="tf" type="button">Review</button></div>
+<div class="pbar" role="progressbar" aria-label="Mastered cards"><span id="fp"></span></div><p id="prog"></p><p class="meta" id="cnt"></p>
+<div class="card fcard ipa" id="fcard" tabindex="0" role="button" aria-label="Flashcard. Press Enter to flip"></div>
+<div id="fa"></div>
+<div style="text-align:center"><button class="btn alt" id="pv" type="button">◀ Previous</button><button class="btn" id="fl" type="button">Flip</button><button class="btn alt" id="nx" type="button">Next ▶</button><br><button class="btn sm" id="ms" type="button">✔ Mastered</button><button class="btn sm" id="sl" type="button">Still learning</button><button class="btn sm alt" id="shf" type="button">🔀 Shuffle</button><button class="btn sm alt" id="ra" type="button">🔁 Review Again</button></div>
+<p class="note">Flashcards use the traditional RP teaching inventory (12 monophthongs, 8 diphthongs). Audio is a recording only if you have added verified files; otherwise use the browser voice, which is not authentic RP.</p>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script><script src="js/main.js"></script><script src="js/flashcards.js"></script>
+</body></html>
